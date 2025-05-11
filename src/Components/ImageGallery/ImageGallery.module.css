@@ -1,0 +1,17 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 0px;
+  padding: 20px;
+}
+
+.galleryItem {
+  width: calc((100% - 80px) / 5);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.galleryItem:hover {
+  transform: scale(1.05);
+}
